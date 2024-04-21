@@ -14,6 +14,7 @@ import "@/assets/css/Header.css";
 import MenuIcon from "@/assets/img/icons/Menu.png";
 import HomeIcon from "@/assets/img/icons/Home.png"
 import GamesIcon from "@/assets/img/icons/Games.png"
+import PlanificationIcon from "@/assets/img/icons/Planification.png";
 
 const Header = () => {
   const [ navMenu, setNavMenu ] = useState(false);
@@ -34,16 +35,12 @@ const Header = () => {
             Inicio
           </Link>
           <Link className="nav-bar-item" href={"/games"}>
-            <Image src={GamesIcon} alt="Icono Inicio" />
+            <Image src={GamesIcon} alt="Icono Juegos" />
             Galería de Juegos
           </Link>
-          <Link className="nav-bar-item" href={"/"}>
-            <Image src={GamesIcon} alt="Icono Inicio" />
-            Item 3
-          </Link>
-          <Link className="nav-bar-item" href={"/"}>
-            <Image src={GamesIcon} alt="Icono Inicio" />
-            Item 4
+          <Link className="nav-bar-item" href={"/planification"}>
+          <Image src={PlanificationIcon} alt="Icono Planificación" />
+            Planifica tu Dinero
           </Link>
         </nav>
         <nav className="nav-btn-menu">

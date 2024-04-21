@@ -1,0 +1,146 @@
+.games-gallery-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap; /* For responsive */
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 5rem;
+    gap: 1rem;
+}
+
+    .games-gallery-item {
+        display: flex;
+        flex: 24%;
+        width: 30%;
+        height: 370px;
+        min-width: 200px;
+        background-color: #fff;
+        border: 2px solid #F2D022;
+        flex-direction: column;
+        border-radius: 10px;
+        justify-content: space-between;
+    }
+
+        .game-gallery-img{
+            display: flex;
+            width: 100%;
+            height: 70%;
+        }
+
+            .game-gallery-img img{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+                border-bottom: 1px solid black;
+            }
+
+            .game-gallery-img img:hover{
+                transform: scale(1.05);
+                transition: .4s ease-in-out;
+                cursor: pointer;
+            }
+
+        .game-gallery-content{
+            display: flex;
+            width: 100%;
+            height: 30%;
+            padding: 1rem;
+            flex-direction: column;
+        }
+
+            .btn-play-gallery{
+                display: flex;
+                width: 50%;
+                height: 40px;
+                background-color: #F2D022;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+                border-radius: 12px;
+                text-decoration: none;
+                font-size: 18px;
+                color: #000000;
+                flex-direction: row-reverse;
+            }
+
+                .btn-play-gallery img{
+                    width: 22px;
+                    height: 22px;
+                }
+
+/* Responsive 1440px */
+@media (max-width: 1440px) {
+    .games-gallery-item {
+        flex: 30%;
+    }
+}
+
+/* Responsive 1280px */
+@media (max-width: 1280px) {
+    .game-gallery-img {
+        height: 67%;
+    }
+
+    .game-gallery-content {
+        height: 33%;
+    }
+
+    .games-gallery-item {
+        height: 350px;
+        flex: 32%;
+    }
+}
+
+/* Responsive 1024px */
+@media (max-width: 1024px) {
+    .games-gallery-item {
+        flex: 35%;
+        height: 380px;
+    }
+
+    .game-gallery-img {
+        height: 70%;
+    }
+
+    .game-gallery-content {
+        height: 30%;
+    }
+}
+
+/* Responsive 768px */
+@media (max-width: 768px) {
+    .games-gallery-item {
+        height: 320px;
+        flex: 48.5%;
+    }
+
+    .btn-play-gallery {
+        height: 35px;
+        font-size: 17px;
+        background-size: contain;
+    }
+
+        .btn-play-gallery img{
+            width: 20px;
+            height: 20px;
+        }
+
+    .game-gallery-content {
+        height: 35%;
+    }
+}
+
+/* Responsive 425px */
+@media (max-width: 425px) {
+    .games-gallery-item {
+        height: 300px;
+    }
+
+    .game-gallery-img {
+        height: 65%;
+    }
+}

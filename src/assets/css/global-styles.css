@@ -8,3 +8,39 @@
 body{
     background-color: #F2F0E4;
 }
+
+.sect-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F0E4;
+    width: 100%;
+    height: auto;
+    padding: 7rem 2.5rem 0;
+}
+
+.title-view {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+    .title-view h1{
+        padding: 0.5rem 3rem 0.5rem;
+        font-size: 21px;
+        border-bottom: 2px solid #F2D022;
+        font-weight:lighter;
+    }
+
+/* Responsive 1024px */
+@media (max-width: 1024px) {
+    .sect-content {
+        padding: 6rem 1.5rem 0;
+    }
+
+    .title-view h1{
+        padding: 0 3rem 8px;
+        font-size: 18px;
+    }
+}
