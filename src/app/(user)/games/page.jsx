@@ -7,21 +7,25 @@ export const POST = [
     id: 1,
     slug: "game-1",
     title: "Game 1",
+    paragraph: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
   },
   {
     id: 2,
     slug: "game-2",
     title: "Game 2",
+    paragraph: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
   },
   {
     id: 3,
     slug: "game-3",
     title: "Game 3",
+    paragraph: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
   },
   {
     id: 4,
     slug: "game-4",
     title: "Game 4",
+    paragraph: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
   },
 ];
 
