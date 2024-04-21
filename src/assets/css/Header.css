@@ -1,0 +1,138 @@
+.header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #F2D022;
+    padding: 2rem 2.5rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-title, .nav-third {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    color: #000000;
+    font-size: 30px;
+}
+
+.nav-bar {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+    .nav-bar-item {
+        display: flex;
+        color: #000000;
+        margin: 5px 0 5px;
+        text-decoration: none;
+        list-style: none;
+        font-size: 18px;
+        padding: 0.5rem 15px 0.5rem;
+        border: 1px solid #F2D022;
+        margin: 0 1rem 0;
+        align-items: center;
+    }
+
+        .nav-bar-item img{
+            display: none;
+            width: 24px;
+            height: 23px;
+            margin-right: 10px;
+        }
+
+    .nav-bar-item:hover {
+        border-bottom: 1px solid #000000;
+        transition: .3s ease all;
+    }
+
+.nav-btn-menu {
+    display: none;
+}
+
+    .btn-menu {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+        .btn-menu img {
+            width: 100%;
+            height: 100%;
+        }
+
+/* Responsive 1440px */
+@media (max-width: 1440px) {
+    .header {
+        height: 70px;
+    }
+
+    .nav-title {
+        font-size: 25px;
+    }
+
+    .nav-bar-item {
+        font-size:  15px;
+        margin: 0 10px 0;
+    }
+}
+
+/* Responsive 1024px */
+@media (max-width: 1024px) {
+    .header {
+        padding: 0 1.5rem 0;
+    }
+    
+    .nav-third {
+        display: none;
+    }
+
+    .nav-bar {
+        display: flex;
+        position: absolute;
+        top: 70px;
+        width: 25%;
+        height: 100vh;
+        min-width: 200px;
+        max-width: 30%;
+        overflow: auto;
+        transition: .3s;
+        flex-direction: column;
+        justify-content: flex-start;
+        transform: translateX(-120%);
+        left: 0;
+        background-color: #F2D022;
+        padding: 1rem 0 2rem;
+    }
+
+    .nav-bar.active {
+        transform: translate(0) !important;
+    }
+
+    .nav-title {
+        width: 75%;
+    }
+
+    .nav-bar-item {
+        font-size: 15px;
+        margin: 0 10px 0;
+        margin-right: 0;
+    }
+
+    .nav-bar-item img{
+        display: flex;
+    }
+
+    .nav-btn-menu {
+        display: flex;
+        width: 25%;
+        justify-content: flex-end;
+    }
+}

@@ -31,22 +31,24 @@ export const POST = [
 
 const GamesGalleryView = () => {
   return (
-    <div>
+    <>
       <Header />
-      <h1>Games Gallery View</h1>
-
-      <main>
-          {POST.map ((post) => (
-            <div key={post.id}>
-              <h2><b>Title: </b>{post.title}</h2>
-              <h3><b>Slug - URL Route: </b>{post.slug}</h3>
-              <Link href={`/games/${post.slug}`}>Play</Link>
-              <br />
-              <br />
-            </div>
-          ))}
-      </main>
-    </div>
+      <br /><br /><br /><br />
+      <div>
+        <h1>Games Gallery View</h1>
+        <main>
+            {POST.map ((post) => (
+              <div key={post.id}>
+                <h2><b>Title: </b>{post.title}</h2>
+                <h3><b>Slug - URL Route: </b>{post.slug}</h3>
+                <Link href={`/games/${post.slug}`}>Play</Link>
+                <br />
+                <br />
+              </div>
+            ))}
+        </main>
+      </div>
+    </>
   )
 }
 
