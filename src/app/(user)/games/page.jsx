@@ -18,11 +18,11 @@ import "@/assets/css/GamesGallery.css";
 export const POST = [
   {
     id: 1,
-    slug: "juego-1",
-    title: "Juego 1",
+    slug: "drag-and-drop-simple",
+    title: "Drag and Drop Simple",
     imgSrc: GameImgExample,
     imgAlt: "Photo example",
-    paragraph: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+    paragraph: "Drag and Drop Simpl",
   },
   {
     id: 2,
