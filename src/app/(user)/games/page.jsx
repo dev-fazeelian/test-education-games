@@ -10,7 +10,7 @@ import "@/assets/css/GamesGallery.css";
 
 // Images - Icons
   // Game Image Example
-  import GameImgExample from "@/assets/img/GameImageEx.jpeg";
+  import GameImgExample from "@/assets/img/game-image.jpeg";
 
   // Play Icon
   import PlayIcon from "@/assets/img/icons/Play.png";
@@ -100,7 +100,11 @@ const GamesGalleryView = () => {
                 <h2>{post.title}</h2>
                 <Link href={`/games/${post.slug}`} className="btn-play-gallery">
                   Jugar
-                  <Image src={PlayIcon} alt="Jugar Icono" />
+                  <Image 
+                    src={PlayIcon} 
+                    alt="Jugar Icono" 
+                    priority={true} 
+                  />
                 </Link>
               </div>
             </div>
