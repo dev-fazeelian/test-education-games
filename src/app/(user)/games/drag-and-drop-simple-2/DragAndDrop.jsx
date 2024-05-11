@@ -7,8 +7,11 @@ import { useState } from "react";
 // Components
 import { DroppableItems } from "./DroppableItems";
 
+// Initial Items list
+import ItemsList from "./ItemsList";
+
 const DragAndDrop = () => {
-    const [ items, setItems ] = useState(false);
+    const [ items, setItems ] = useState(ItemsList);
 
     // On Drag End Function
     const onDragEnd = (result) => {
