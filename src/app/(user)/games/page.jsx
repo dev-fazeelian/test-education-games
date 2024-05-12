@@ -34,8 +34,8 @@ export const POST = [
   },
   {
     id: 3,
-    slug: "juego-3",
-    title: "Juego 3",
+    slug: "drag-and-drop-todo",
+    title: "Drag and Drop To Do",
     imgSrc: GameImgExample,
     imgAlt: "Photo example",
     paragraph: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",

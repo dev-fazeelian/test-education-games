@@ -1,0 +1,44 @@
+.drag-drop-section {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 2rem 0 2rem;
+    gap: 1rem;
+}
+
+.columns-cont {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin: 1rem 0 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column{
+    display: flex;
+    padding: 8px;
+    width: 320px;
+    min-height: 450px;
+    overflow-y: auto;
+    border-radius: 1rem;
+    flex-direction: column;
+}
+
+.item-styles {
+    display: flex;    
+    user-select: none;
+    padding: 1rem;
+    margin: 0 0 8px 0;
+    min-height: 60px;
+    color: black;
+    font-family: "Cambria";
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
