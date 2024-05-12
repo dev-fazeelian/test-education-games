@@ -8,7 +8,7 @@ import { Header } from "@/components/Header"
 import "@/assets/css/DragAndDropSimple.css";
 
 // React Hooks
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // React Beautiful DND Components
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
@@ -47,7 +47,18 @@ const DragAndDropSimple = () => {
         newItems.splice(result.destination.index, 0, draggedItem); // insertion of new item
     
         setItems(newItems); // save changes
+        localStorage.setItem('itemsOrder', JSON.stringify(newItems.map(item => item.id))); // add new item to local storage
     };
+
+    // Retrieve saved order from local storage on component mount
+    useEffect(() => {
+        const savedOrder = localStorage.getItem('itemsOrder');
+        if (savedOrder) {
+            const orderArray = JSON.parse(savedOrder);
+            const newItems = orderArray.map(id => items.find(item => item.id === id));
+            setItems(newItems);
+        }
+    }, []);
 
     return (
         <>
